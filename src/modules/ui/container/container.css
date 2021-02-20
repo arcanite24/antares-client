@@ -1,0 +1,14 @@
+.antares-container {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 64px calc(64px * 4) auto;
+}
+
+.foo {
+  background-color: brown;
+}
+
+.baz {
+  background-color: cadetblue;
+}

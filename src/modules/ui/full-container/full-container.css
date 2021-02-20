@@ -1,0 +1,11 @@
+.antares-full-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 64px 20% auto;
+}
+
+.antares-full-container__content {
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}

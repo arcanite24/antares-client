@@ -1,6 +1,6 @@
 module.exports = (req, res) => {
   return res.json({
     ok: true,
-    message: '🚀',
+    message: '🚀 =>' + process.env.FAUNA_GUEST_TOKEN,
   });
 };

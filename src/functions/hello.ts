@@ -1,4 +1,4 @@
-import { NowRequest, NowResponse } from '@vercel/node';
+import type { NowRequest, NowResponse } from '@vercel/node';
 
 const hello = (_req: NowRequest, res: NowResponse): void => {
   res.json({

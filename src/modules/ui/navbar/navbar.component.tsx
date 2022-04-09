@@ -35,6 +35,7 @@ const AntaresNavbar: React.FC<Props> = ({ className }) => {
         className,
       )}
     >
+      hola
       <NavbarItem title="Overview" selected={true}></NavbarItem>
       <NavbarItem title="Projects" selected={false}></NavbarItem>
       <NavbarItem title="Payments" selected={false}></NavbarItem>

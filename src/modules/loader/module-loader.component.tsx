@@ -12,7 +12,7 @@ const ModuleLoader: React.FC = () => {
     <div>
       <h1>Module Loader</h1>
       <hr />
-      <Suspense fallback={<AntaresLoader></AntaresLoader>}>
+      <Suspense fallback={<AntaresLoader mode="doc"></AntaresLoader>}>
         {/* <RemoteModule></RemoteModule> */}
       </Suspense>
     </div>

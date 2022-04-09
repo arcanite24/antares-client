@@ -9,6 +9,7 @@ module.exports = {
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
+    '@snowpack/plugin-postcss',
     [
       '@snowpack/plugin-build-script',
       { cmd: 'postcss', input: ['.css'], output: ['.css'] },
@@ -26,6 +27,7 @@ module.exports = {
   devOptions: {
     /* ... */
     port: 8001,
+    tailwindConfig: './tailwind.config.js',
   },
   buildOptions: {
     /* ... */
@@ -33,4 +35,11 @@ module.exports = {
   alias: {
     /* ... */
   },
+  routes: [
+    {
+      match: 'routes',
+      src: '.*',
+      dest: '/index.html',
+    },
+  ],
 };

@@ -8,19 +8,22 @@ interface AntaresActionsButtonProps {
   color: string;
   icon: IconDefinition;
   marginBottom?: string;
+  onClick?: () => void;
 }
 
 const AntaresActionsButton: React.FC<AntaresActionsButtonProps> = ({
   color,
   icon,
   marginBottom = '1rem',
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  onClick = () => {},
 }) => {
   return (
     <div
       className="antares-actions-button flex flex-row items-center justify-center"
       style={{ borderColor: color, marginBottom }}
     >
-      <button style={{ backgroundColor: color }}>
+      <button style={{ backgroundColor: color }} onClick={() => onClick()}>
         <FontAwesomeIcon
           icon={icon}
           color={'black'}
